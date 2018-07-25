@@ -1,0 +1,7 @@
+json:
+	reading json files and parsing them
+
+difflib:
+	seeing matches between text data
+	get_close_matches(word, [list of words],cutoff=0.8)
+		returns the words that match higher than 80% with word
