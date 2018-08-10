@@ -4,16 +4,21 @@ from difflib import get_close_matches
 with open("data.json") as f:
     data = json.load(f) # load json files
 
-if len(sys.argv) > 2:
+if len(sys.argv) >= 2:
     word = ' '.join(sys.argv[1:])
 else:
     word = input('Give the word to define \n')
 
 def define(word):
 
-    word = word.lower()
+    word = word
     word2 = get_close_matches(word,data.keys(),cutoff=0.8)
 
+    if word in data:
+        a = ''
+        for definition in range(len(data[word])):
+            a += data[word][definition] + '\n'
+        return a
     if word in data:
         a = ''
         for definition in range(len(data[word])):
