@@ -1,7 +1,30 @@
 json:
-	reading json files and parsing them
+
+reading json files and parsing them
 
 difflib:
-	seeing matches between text data
-	get_close_matches(word, [list of words],cutoff=0.8)
-		returns the words that match higher than 80% with word
+
+seeing matches between text data
+get_close_matches(word, [list of words],cutoff=0.8)
+returns the words that match higher than 80% with word
+
+numpy:
+
+great library to organize lists (low level c implementation)
+
+cv2:
+
+converting images to numpy arrays and applying several methods on 		them
+
+folium: (Application 2)
+
+Maps library. Generates map objects that can be converted to html files to be viewd in a browser
+
+
+flask: (Application 4)
+
+Building websites
+
+sqlite3:
+
+database creation and management

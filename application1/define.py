@@ -19,7 +19,8 @@ def define(word):
         for definition in range(len(data[word])):
             a += data[word][definition] + '\n'
         return a
-    if word in data:
+    if word.lower() in data:
+        word = word.lower()
         a = ''
         for definition in range(len(data[word])):
             a += data[word][definition] + '\n'
