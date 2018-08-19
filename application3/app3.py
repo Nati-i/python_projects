@@ -13,11 +13,11 @@ while True:
     if dt(a.year,a.month,a.day,8) < dt.now() < dt(a.year,a.month,a.day,15):
 
         with open(host_path, 'r+') as file: #r+ is append
-            content = file.read()
+            content = file.read()'www.facebook.com','facebook.com','other.com','random.org'
 
             for website in website_list:
                 if website in content:
-                    pass
+                    pass'www.facebook.com','facebook.com','other.com','random.org'
                 else:
                     file.write(website + '\t' + redirect + '\n')
 
