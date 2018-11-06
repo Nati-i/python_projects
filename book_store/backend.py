@@ -6,7 +6,7 @@ def connect():
     cur.execute("CREATE TABLE IF NOT EXISTS book (id INTEGER PRIMARY KEY, title text, author text, year integer, isbn integer)")
     conn.commit()
     conn.close()
-
+# Here book is a table in the "books.db" database
 def insert(title,author,year,isbn):
     conn = sqlite3.connect("books.db")
     cur = conn.cursor()
