@@ -39,7 +39,7 @@ class Database:
         rows = self.cur.fetchall()
         return rows
     
-    def view_date(self, date="", items=""):
+    def view_item_on_date(self, date="", items=""):
         self.cur.execute("""
         SELECT * FROM data WHERE date=? OR items=?
         """,(date, items))
